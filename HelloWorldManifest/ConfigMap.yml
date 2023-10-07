@@ -11,4 +11,7 @@ data:
       - system:masters
       userarn: arn:aws:iam::815112297653:user/SuperUser
       username: SuperUser
+metadata: 
+  name: aws-auth
+  namespace: kube-system
 kind: ConfigMap
