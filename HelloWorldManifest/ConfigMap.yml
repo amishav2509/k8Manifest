@@ -4,7 +4,7 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::815112297653:role/MainStack-k8WorkerNodes-GZ471C1AE-NodeInstanceRole-1QXOVWOR4LO27
+      rolearn: arn:aws:iam::815112297653:instance-profile/eks-6ac586a5-b329-89be-91c3-63fe4f8365e8
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
