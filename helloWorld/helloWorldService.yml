@@ -4,6 +4,8 @@ metadata:
   name: hello-world-svc
   labels:
     app: hello-world
+  annotations:
+        alb.ingress.kuberenetes.io/healthcheck-path: /index.html
 spec:
   type: NodePort
   selector:
