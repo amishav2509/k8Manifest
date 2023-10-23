@@ -15,8 +15,8 @@ metadata:
     alb.ingress.kubernetes.io/healthy-threshold-count: "2"
     alb.ingress.kubernetes.io/unhealthy-threshold-count: "2"
     alb.ingress.kubernetes.io/subnets: subnet-00f25e0f3abd3e358, subnet-0dee17523495f5d69
-    alb.ingress.kubernetes.io/group.name: myapps.web
-    alb.ingress.kubernetes.io/group.order: "50"
+    alb.ingress.kubernetes.io/group.name: my-team.awesome-group
+    alb.ingress.kubernetes.io/group.order: '10'
 spec:
   ingressClassName: my-aws-ingress-class
   rules:
