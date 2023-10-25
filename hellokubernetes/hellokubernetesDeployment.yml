@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-kubernetes-deployment
+  labels: 
+    app: hello-kubernetes
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-kubernetes
+  template:
+    metadata:
+      name: my-container
+      labels:
+        app: hello-kubernetes
+    spec:
+      containers:
+        - name: hello-kubernetes
+          image: imageID
