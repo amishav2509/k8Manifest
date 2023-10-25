@@ -1,5 +1,5 @@
 FROM adoptopenjdk/openjdk8:latest
 VOLUME /tmp
 RUN mkdir /classpath && chmod -R 774 /classpath
-ADD ../../hellokubernetesCode/hellokubernetes/target/hellokubernetes-0.0.1-SNAPSHOT.jar hellokubernetes.jar
+ADD /var/lib/jenkins/workspace/helloWorldCI/hellokubernetesCode/hellokubernetes/target/hellokubernetes-0.0.1-SNAPSHOT.jar hellokubernetes.jar
 CMD ["java","-jar","hellokubernetes.jar"]
