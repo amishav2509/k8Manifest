@@ -1,3 +1,2 @@
 FROM adoptopenjdk/openjdk8:latest
-
-CMD ["java","-jar","../../hellokubernetesCode/hellokubernetes/target/hellokubernetes-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar","hellokubernetes-0.0.1-SNAPSHOT.jar"]
